@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripaStore</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="TripaStore Logo" style="height: 200px;">
+    <button id="menu-toggle">☰</button>
+    <nav>
+      <ul>
+        <li><a href="#novidades">Início</a></li>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#weapons">Weapons</a></li>
+        <li><a href="#ultras">Ultras</a></li>
+        <li><a href="#forges">Forges</a></li>
+        <li><a href="#diversos">Diversos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="novidades" id="novidades">
+    <h2>Últimas Novidades</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="img/polly.png" alt="Polly Roger">
+        <h3>Polly Roger</h3>
+        <p>R$ 15,00</p>
+       <button onclick="abrirModal('Polly Roger', 15, 'When equipped, this item does 30% more damage to Dragon, Human, Undead, Chaos, and Elemental monsters.', 'img/polly.png')">Ver detalhes</button>
+      </div>
+      <div class="produto">
+        <img src="img/lich.png" alt="Lich Class">
+        <h3>Lich Class</h3>
+        <p>R$ 35,00</p>
+        <button onclick="abrirModal('Lich Class', 35, 'Recommended enhancement: Wizard. Only in death can you truly embrace the darkness that lies within you. Channel it to raise an army of the dead and lead an assault across Lore. The darkest power is now yours!.', 'img/lich.png')">Ver detalhes</button>
+      </div>
+    </div>
+  </section>
+
+    <section class="classes" id="classes">
+    <h2>Classes</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="img/legionrevenant.png" alt="Legion Revenant">
+        <h3>Legion Revenant</h3>
+        <p>R$ 49,90</p>
+       <button onclick="abrirModal('Legion Revenant', 49.90, 'Steeped in darkness, Legion Revenants derive their power from the essence responsible for the Legions un-death. The Legion flows through them, and they are the Legion.', 'img/legionrevenant.png')">Ver detalhes</button>
+      </div>
+      <div class="produto">
+        <img src="img/lich.png" alt="Lich Class">
+        <h3>Lich Class</h3>
+        <p>R$ 35,00</p>
+        <button onclick="abrirModal('Lich Class', 35, 'Recommended enhancement: Wizard. Only in death can you truly embrace the darkness that lies within you. Channel it to raise an army of the dead and lead an assault across Lore. The darkest power is now yours!.', 'img/lich.png')">Ver detalhes</button>
+      </div>
+    </div>
+  </section>
+
+    <section class="weapons" id="weapons">
+    <h2>Weapons</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="img/nsod.png" alt="Necrotic Sword of Doom">
+        <h3>Necrotic Sword of Doom</h3>
+        <p>R$ 49,90</p>
+       <button onclick="abrirModal('Necrotic Sword of Doom', 49.90, 'The darkness compels… DOOOOOOOOOOOM!!!', 'img/nsod.png')">Ver detalhes</button>
+      </div>
+      <div class="produto">
+        <img src="img/blod.png" alt="Blinding Light of Destiny">
+        <h3>Blinding Light of Destiny</h3>
+        <p>R$ 20,00</p>
+        <button onclick="abrirModal('Blinding Light of Destiny', 20, 'You ve battled many monsters and saved Lore countless times! The Blinding Light of Destiny may only be wielded by the strongest, most tenacious of Heroes. Artix has no doubt that you have earned this honor!.', 'img/blod.png')">Ver detalhes</button>
+      </div>
+    </div>
+  </section>
+
+    <section class="ultras" id="ultras">
+    <h2>Ultras</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="img/udage.jpg" alt="Ultra Dage">
+        <h3>Ultra Dage</h3>
+        <p>R$ 49,90</p>
+       <button onclick="abrirModal('Ultra Dage', 49.90, 'Must have completed the Fail to the King quest to access this location. This is a locked zone. Only accessible to players level 80 and above.', 'img/udage.jpg')">Ver detalhes</button>
+      </div>
+      <div class="produto">
+        <img src="img/unulgath.jpg" alt="Ultra Nulgath">
+        <h3>Ultra Nulgath</h3>
+        <p>R$ 20,00</p>
+        <button onclick="abrirModal('Ultra Nulgath', 20, 'Only accessible to players level 80 and above. This is a locked zone.', 'img/unulgath.jpg')">Ver detalhes</button>
+      </div>
+    </div>
+  </section>
+
+    <section class="forges" id="forges">
+    <h2>Forges</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="img/forges.png" alt="Dauntless">
+        <h3>Dauntless</h3>
+        <p>R$ 49,90</p>
+       <button onclick="abrirModal('Dauntless', 49.9, 'Special skill on second skill: 100% chance to activate on the second skill (3 second cooldown). Deals 190 - 570% Physical Damage, increasing the lower your health is. Lifesteals based on Attack Power, increasing the lower your health is. Always hits and crits. Applies Dauntless to yourself for 12 seconds: +15% Crit Chance +25% Haste -50% Mana Consumption Applies Decay, Cannot Heal to yourself for 6 seconds.', 'img/forges.png')">Ver detalhes</button>
+      </div>
+      <div class="produto">
+        <img src="img/forges.png" alt="Elysium">
+        <h3>Elysium</h3>
+        <p>R$ 20,00</p>
+        <button onclick="abrirModal('Elysium', 20, 'Special skill on second skill: 100% chance to activate on third skill (no cooldown). Deals 500 - 2250% Magic Damage to up to 2 targets, increasing the lower your mana is. Cannot crit. Applies a stack of Elysian to yourself for every target struck, stacks to 3 and lasts 8 seconds: Gain a small but rapid HoT that increases with stacks of Elysian. Other effects do not stack. Gain 4 mana per second. +10% Damage Boosts.', 'img/forges.png')">Ver detalhes</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="diversos" id="diversos">
+    <h2>Diversos</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="img/polly.png" alt="Polly Roger">
+        <h3>Polly Roger</h3>
+        <p>R$ 15,00</p>
+       <button onclick="abrirModal('Polly Roger', 15, 'When equipped, this item does 30% more damage to Dragon, Human, Undead, Chaos, and Elemental monsters.', 'img/polly.png')">Ver detalhes</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 TripaStore. Todos os direitos reservados.</p>
+  </footer>
+
+  <div id="modalProduto" class="modal">
+  <div class="modal-conteudo">
+    <span id="fecharModal" class="fechar">✖</span>
+    <img id="modalImagem" src="" alt="" />
+    <h2 id="modalNome"></h2>
+    <p id="modalDescricao"></p>
+    <p><strong>Preço:</strong> R$ <span id="modalPreco"></span></p>
+    <button id="modalComprar">Comprar</button>
+  </div>
+</div>
+
+
+  <!-- Botão flutuante para abrir o carrinho -->
+  <button id="openCart">🛍️</button>
+
+  <!-- Carrinho como aba lateral -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <span class="cart-icon">🛒 Carrinho</span>
+      <button id="closeCart">✖</button>
+    </div>
+    <div class="cart-body">
+      <div id="emptyMessage" style="display:none;">
+        <p>Sua sacola está vazia.</p>
+      </div>
+      <ul id="itensCarrinho"></ul>
+      <p>Total: R$ <span id="total">0</span></p>
+    </div>
+  </div>
+</body>
+</html>
